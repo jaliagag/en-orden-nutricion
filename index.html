@@ -1,20 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
     <title>En Orden Nutrición</title>
 </head>
+
 <body>
+     <nav class="topnav">
+         <a class="active" href="#home">Inicio</a>
+         <a href="#news">Notas</a>
+         <a href="#contact">Formulario</a>
+         <a href="#about">Contacto</a>
+     </nav>
     <header class="head">
-        <h1 class="title">EN ORDEN NUTRICIÓN</h1>
+        <img src="./assets/001.jpg" alt="intro" id="image-001">
     </header>
     <main class="corpus">
-        <form class="formularioche">
+        <div class="welcome">
+            <span>TEXTO BIENVENIDA</span>
+        </div>
+        <div>
+            <span>2 IMÁGES Y 2 TEXTOS</span>
+        </div>
+        <div>
+            <span>¡Contáctanos!</span>
+        </div>
+        <div class="container">
+            <form action="">
+                <div class="cajaform">
+                    <label>Nombre*: </label>
+                    <input type="text" id="name" name="name" placeholder="Nombre" required>
+                </div>
+                <div class="cajaform">
+                    <label>¿Cómo querés que te llame? </label>
+                    <input type="text" id="nick" name="nick" placeholder="Sobrenombre">
+                </div>
+                <div class="cajaform">
+                    <label for="">Whatsapp: </label>
+                    <input type="text" id="telf" name="telf" placeholder="+54 9 351 123 4567">
+                </div>
+                <div class="cajaform">
+                    <label for="">Mail*: </label>
+                    <input type="text" id="email" name="email" placeholder="Mail" required>
+                </div>
+                <div class="cajaform"></div>
+                 <label for="subject">Motivo de tu consulta</label>
+                 <textarea id="subject" name="subject" placeholder="Contame..." style="height:200px"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+
+        <!-- <form class="formularioche">
             <br>
             <div class="cajaform">
                 <label>Nombre:* </label>
@@ -49,9 +94,10 @@
                 <br>
                 <input type="radio" name="carrera" id="carrera_01" value="UXUI" required="required" />UX/UI<br>
                 <input type="radio" name="carrera" id="carrera_02" value="DTSC" required="required" />Data Science<br>
-                <input type="radio" name="carrera" id="carrera_03" value="DWFS" required="required" />Desarrollo Web Full Stack
-                <!-- PARA QUE SOLO SE PUEDA ELEGIR UNA CARRERA, EN ESTE CASO, HAY QUE PONERLE EL NAME Y ID EL MISMO NOMBRE-->
-            </div>
+                <input type="radio" name="carrera" id="carrera_03" value="DWFS" required="required" />Desarrollo Web
+                Full Stack
+                PARA QUE SOLO SE PUEDA ELEGIR UNA CARRERA, EN ESTE CASO, HAY QUE PONERLE EL NAME Y ID EL MISMO NOMBRE-->
+            <!-- </div>
             <div class="cajaform">
                 <label>Modalidad:* </label><br>
                 <input type="radio" name="modalidad" id="modalidad_01" value="pres" required="required" />Presencial<br>
@@ -68,24 +114,58 @@
             </div>
             <div class="cajaform desk">
                 <label>Descripción personal: </label><br>
-                <textarea name="descripcion" id="descripcion" maxlength="300" placeholder="Máximo 300 caracteres"></textarea>
+                <textarea name="descripcion" id="descripcion" maxlength="300"
+                    placeholder="Máximo 300 caracteres"></textarea>
             </div>
             <div class="cajaform">
                 <input type="submit" value="Enviar formulario">
                 <input type="reset" value="Limpiar formulario">
             </div>
         </form>
+        <form action="/action">
+            <div class="form-group"></div>
+            <div class="form-group"></div>
+            <div class="form-group"></div>
+            <div class="form-group"></div>
+        </form> -->
     </main>
     <footer class="foot">
         <div class="contact">
             <h3>Información de contacto</h3>
             <div class="contact_links">
-                <a href="https://www.linkedin.com/in/josealiagatr/" target="_blank" class="link_up"><i class="fa fa-linkedin-square" style="font-size:36px"></i> <span> Linkedin</span></a>
-                <a href="https://wa.me/5493518021684?text=Hola!%20Quiero%20contactarme%20con%20vos" target="_blank" class="link_up"><i class="fa fa-whatsapp" style="font-size:36px;color:green"></i><span> Whatsapp - +54 9 3518 02-1684</span></a>
-                <i class="fa fa-empire" style="font-size:26px;color:black" onclick="rebelScum()" id="longLiv"></i>
+                <div class="bottom-sq">
+                    <a href="https://www.instagram.com/en.orden.nutricion/" target="_blank" class="link_up ig">
+                        <i class="fa fa-instagram" style="font-size:36px;"></i>
+                        <span>En orden nutrición</span>
+    
+                    </a>
+                </div>
+                <div class="bottom-sq">
+                    <a href="https://wa.me/5493518021684?text=Hola!%20Quiero%20contactarme%20con%20vos" target="_blank"
+                    class="link_up wp">
+                        <i class="fa fa-whatsapp" style="font-size:36px;"></i>
+                        <span> Whatsapp - +54 9 3518 02-1684</span>
+                    </a>
+                </div>
+                <div class="bottom-sq">
+                    <a href="https://www.linkedin.com/in/josealiagatr/" target="_blank" class="link_up li">
+                        <i class="fa fa-linkedin-square" style="font-size:36px;"></i> 
+                        <span> Linkedin</span>
+                    </a>
+                </div>
+                <div class="bottom-sq">
+                    <a href="" target="_blank" class="link_up gm">
+                        <i class="fa fa-inbox" style="font-size: 36px;"></i>
+                        <span> pmcentanni@gmail.com</span>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
     <script src="index.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"> -->
+    </script>
 </body>
+
 </html>
