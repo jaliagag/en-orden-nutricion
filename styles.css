@@ -1,0 +1,20 @@
+html {
+    margin: auto;
+    max-width: 1440px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: blanchedalmond;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    margin-top: 50px;
+    font-style: italic;
+}
