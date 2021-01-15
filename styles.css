@@ -12,7 +12,9 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
+    background-color: #d0c1a4;
+    max-width: 1440px;
 }
 
 header {
@@ -25,21 +27,33 @@ header {
     font-style: italic;
 }
 
+.section-title {
+    width: 100%;
+    background-color: #006994;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
 /* NAV */
 
 .topnav {
     background-color: #333;
     overflow: hidden;
+    /* position: fixed; */
+
 }
 
     /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
+    display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    /* top: 0; */
 }
 
     /* Change the color of links on hover */
@@ -50,13 +64,41 @@ header {
 
     /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #4CAF50;
+    background-color: #006994;
     color: white;
 }
 
 /* NAV */
 
+.cform {
+    display: flex;
+    justify-content: space-around;
+}
+
+.news{
+    /* display: flex; */
+}
+
+/* .flex-child {
+    flex: 1;
+}
+
+.flex-child:first-child {
+    margin-right: 20px;
+} */
+
+.image1 {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.image2 {
+    display: none;
+}
+
 /* FORM */
+
 
 input[type=text],
 textarea {
@@ -87,22 +129,58 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+    max-width: 720px;
 }
 
 /* FORM */
 
+.contact_links {
+    display: flex;
+    justify-content: space-around;
+}
+
 /* RESPONSIVE */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
     html {
         margin: auto;
         max-width: 1440px;
         scroll-behavior: smooth;
     }
 
+    .especial {
+        text-decoration: underline;
+    }
+
     #image-001 {
         width: 100%;
         height: auto;
+    }
+
+    .section-title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1em;
+    }
+
+    .cform {
+        display: grid;
+    }
+
+    .image1{
+        display: none;
+    }
+
+    .image2 {
+        display: block;
+        margin: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .leP {
+        max-width: 75%;
+        margin: auto;
     }
 
     header {
@@ -112,9 +190,12 @@ input[type=submit]:hover {
     }
     body {
         font-family: 'Roboto', sans-serif;
-        background-color: lightblue;
+        /* background-color: lightblue; */
     }
 
+    .contact_links {
+        display: block;
+    }
 
     .link_up {
         text-decoration: none;
