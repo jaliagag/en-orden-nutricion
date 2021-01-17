@@ -9,7 +9,6 @@ html {
         height: auto;
     }
 
-
 body {
     font-family: 'Roboto', sans-serif;
     /* background-color: blanchedalmond; */
@@ -70,14 +69,26 @@ header {
 
 /* NAV */
 
-.cform {
+/* ROTATION */
+
+.rotary {
     display: flex;
-    justify-content: space-around;
 }
 
-.news{
-    /* display: flex; */
+/* ROTATION */
+
+
+
+.cform {
+    display: flex;
+    align-items: center;
 }
+
+/* .news{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} */
 
 /* .flex-child {
     flex: 1;
@@ -97,8 +108,18 @@ header {
     display: none;
 }
 
+.leP {
+    padding-left: 20px;
+    text-align: justify;
+}
+
 /* FORM */
 
+.contact-foto {
+    margin: 1em;
+    display: flex;
+    justify-content: space-around;
+}
 
 input[type=text],
 textarea {
@@ -139,6 +160,64 @@ input[type=submit]:hover {
     justify-content: space-around;
 }
 
+/* ABOUT US */
+
+.contact_links {
+    display: flex;
+}
+
+.link_up {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.bottom-sq {
+    width: 300px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.bottom-sq.wa {
+    width: 450px;
+}
+
+.bottom-sq.gm {
+    margin-right: 20px;
+}
+
+.link_up:hover{
+    color: white;
+}
+
+.link_up.ig i {color: #8a3ab9;}
+.link_up.wp i {color: green}
+.link_up.li i {color: #0072b1}
+.link_up.gm i{color: #F4B400}
+
+.link_up.i:hover{color: white}
+
+.link_up.ig:hover i {color: #fff}
+.link_up.wp:hover i {color:#fff}
+.link_up.li:hover i {color: #fff}
+.link_up.gm:hover i {color:#fff}
+
+.link_up span {
+    /* border-top: -1000px; */
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.mapa {
+    width: 400;
+    height: 350;
+}
+
+/* ABOUT US */
+
 /* RESPONSIVE */
 
 @media only screen and (max-width: 720px) {
@@ -152,6 +231,19 @@ input[type=submit]:hover {
         text-decoration: underline;
     }
 
+    .cform {
+        display: grid;
+    }
+
+    .contact-foto {
+        display: grid;
+    }
+
+    .leP {
+        padding-left: 0px;
+    }
+
+
     #image-001 {
         width: 100%;
         height: auto;
@@ -163,10 +255,6 @@ input[type=submit]:hover {
         margin-bottom: 1em;
     }
 
-    .cform {
-        display: grid;
-    }
-
     .image1{
         display: none;
     }
@@ -176,11 +264,6 @@ input[type=submit]:hover {
         margin: auto;
         margin-top: 1em;
         margin-bottom: 1em;
-    }
-
-    .leP {
-        max-width: 75%;
-        margin: auto;
     }
 
     header {
@@ -232,5 +315,14 @@ input[type=submit]:hover {
         /* border-top: -1000px; */
         margin-left: 5px;
         font-size: 20px;
+    }
+
+    .blck01 {
+        
+    }
+
+    .mapa {
+        width: 200;
+        height: 150;
     }
 }

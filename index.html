@@ -40,6 +40,9 @@
                 </p>
             </div>
         </div>
+        <div class="rotary">
+            
+        </div>
         <div class="news" id="news">
             <div class="cform">
                 <div class="flex-child">
@@ -71,18 +74,15 @@
                     </p>
                 </div>
             </div>
-        </div>
-        
+        </div>      
         <div class="section-title">
             <span>¡Contáctanos!</span>
         </div>
-
-
-        <div class="cform">
-            <div class="container" id="form">
-                <form action="">
+        <div class="contact-foto">
+            <div class="container" id="form" method="post">
+                <form action="" id="myForm">
                     <div class="cajaform">
-                        <label>Nombre (cómo querés que te llame)*: </label>
+                        <label for="name">Nombre (cómo querés que te llame)*: </label>
                         <input type="text" id="name" name="name" placeholder="Nombre" required>
                     </div>
                     <!-- <div class="cajaform">
@@ -90,18 +90,18 @@
                         <input type="text" id="nick" name="nick" placeholder="Sobrenombre">
                     </div> -->
                     <div class="cajaform">
-                        <label for="">Whatsapp: </label>
+                        <label for="whatsapp">Whatsapp: </label>
                         <input type="text" id="telf" name="telf" placeholder="+54 9 351 123 4567">
                     </div>
                     <div class="cajaform">
-                        <label for="">Mail*: </label>
+                        <label for="mail">Mail*: </label>
                         <input type="text" id="email" name="email" placeholder="Mail" required>
                     </div>
                     <div class="cajaform"></div>
                     <label for="subject">Motivo de tu consulta</label>
                     <textarea id="subject" name="subject" placeholder="Contame, que estamos en confianza..."
                         style="height:200px"></textarea>
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" onclick="submitForm()">
                 </form>
             </div>
             
@@ -129,32 +129,35 @@
                 <span>Información de contacto</span>
             </div>
             <div class="contact_links">
-                <div class="bottom-sq">
-                    <a href="https://www.instagram.com/en.orden.nutricion/" target="_blank" class="link_up ig">
-                        <i class="fa fa-instagram" style="font-size:36px;"></i>
-                        <span>En orden nutrición</span>
-    
-                    </a>
+                <div class="blck01">
+                    <div class="bottom-sq">
+                        <a href="https://www.instagram.com/en.orden.nutricion/" target="_blank" class="link_up ig">
+                            <i class="fa fa-instagram" style="font-size:36px;"></i>
+                            <span>En orden nutrición</span>
+        
+                        </a>
+                    </div>
+                    <div class="bottom-sq wa">
+                        <a href="https://wa.me/5493518021684?text=Hola!%20Quiero%20contactarme%20con%20vos" target="_blank"
+                        class="link_up wp">
+                            <i class="fa fa-whatsapp" style="font-size:36px;"></i>
+                            <span> Whatsapp - +54 9 3518 02-1684</span>
+                        </a>
+                    </div>
+                    <div class="bottom-sq">
+                        <a href="https://www.linkedin.com/in/josealiagatr/" target="_blank" class="link_up li">
+                            <i class="fa fa-linkedin-square" style="font-size:36px;"></i> 
+                            <span> Linkedin</span>
+                        </a>
+                    </div>
+                    <div class="bottom-sq gm">
+                        <a href="mailto:pmcentanni@gmail.com" target="_blank" class="link_up gm">
+                            <i class="fa fa-inbox" style="font-size: 36px;"></i>
+                            <span> pmcentanni@gmail.com</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="bottom-sq">
-                    <a href="https://wa.me/5493518021684?text=Hola!%20Quiero%20contactarme%20con%20vos" target="_blank"
-                    class="link_up wp">
-                        <i class="fa fa-whatsapp" style="font-size:36px;"></i>
-                        <span> Whatsapp - +54 9 3518 02-1684</span>
-                    </a>
-                </div>
-                <div class="bottom-sq">
-                    <a href="https://www.linkedin.com/in/josealiagatr/" target="_blank" class="link_up li">
-                        <i class="fa fa-linkedin-square" style="font-size:36px;"></i> 
-                        <span> Linkedin</span>
-                    </a>
-                </div>
-                <div class="bottom-sq">
-                    <a href="mailto:pmcentanni@gmail.com" target="_blank" class="link_up gm">
-                        <i class="fa fa-inbox" style="font-size: 36px;"></i>
-                        <span> pmcentanni@gmail.com</span>
-                    </a>
-                </div>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d851.2492943011937!2d-64.16797517077562!3d-31.414203854309935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDI0JzUxLjEiUyA2NMKwMTAnMDIuNyJX!5e0!3m2!1ses!2sar!4v1610832305073!5m2!1ses!2sar"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
     </footer>
